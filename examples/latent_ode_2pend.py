@@ -268,7 +268,7 @@ if __name__ == '__main__':
 
             loss_list.append(-loss_meter.avg)
 
-            if args.viz:
+            if args.viz and itr % 25 == 0 or itr == 1:
 
                 # print('test5')
 
